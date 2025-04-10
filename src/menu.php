@@ -129,7 +129,7 @@
 
         <!-- Go To Cart Button -->
         <div class="flex justify-center mt-8">
-            <a href="cart.php"><button class="bg-menu-green text-white px-8 py-3 rounded hover:bg-green-600 transition-colors">
+            <a href="cart.php"><button class="bg-green-500 text-white px-8 py-3 rounded hover:bg-green-600 transition-colors">
                 GO To Cart
             </button></a>
         </div>
