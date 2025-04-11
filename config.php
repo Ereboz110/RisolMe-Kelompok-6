@@ -1,16 +1,14 @@
 <?php
-$servername = "localhost";
+$host = "localhost";
 $username = "root";
 $password = "";
 $dbname = "risolme";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Create connection (Object-Oriented Style)
+$conn = new mysqli($host, $username, $password, $dbname);
 
 // Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
-//echo "Connected successfullys"; 
-//echo "Connected successfullys";;
 ?>
